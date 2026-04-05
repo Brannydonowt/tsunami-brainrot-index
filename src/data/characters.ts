@@ -202,7 +202,7 @@ export const ALL_CHARACTERS: CharacterData[] = [
   // ── Divine (7) ──
   { id: 'GraipussMedussi', name: 'Graipuss Medussi', rarity: Rarity.Divine, baseEarningRate: 30000000, renderFile: null, tradeable: false },
   { id: 'PenguinoCocosino', name: 'Penguino Cocosino', rarity: Rarity.Divine, baseEarningRate: 37500000, renderFile: null, tradeable: false },
-  { id: 'BrriBrriBicusDicusBombicus', name: 'Brri Brri Bicus Dicus Bombicus', rarity: Rarity.Divine, baseEarningRate: 45000000, renderFile: null, tradeable: false },
+  { id: 'BrriBrriBicusDicusBombicus', name: 'Brri Brri Bicus Dicus Bombicus', rarity: Rarity.Divine, baseEarningRate: 45000000, renderFile: 'T_Char_Brr es Teh Patipum.png', tradeable: false },
   { id: 'CocofantoElefanto', name: 'Cocofanto Elefanto', rarity: Rarity.Divine, baseEarningRate: 52500000, renderFile: null, tradeable: false },
   { id: 'ExtinctTralalero', name: 'Extinct Tralalero', rarity: Rarity.Divine, baseEarningRate: 60000000, renderFile: null, tradeable: false },
   { id: 'RhinoToasterino', name: 'Rhino Toasterino', rarity: Rarity.Divine, baseEarningRate: 67500000, renderFile: null, tradeable: false },
