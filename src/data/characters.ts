@@ -71,6 +71,8 @@ export enum ModifierType {
   Blood = 'Blood',
   Electric = 'Electric',
   Radioactive = 'Radioactive',
+  Cosmos = 'Cosmos',
+  Admin = 'Admin',
 }
 
 export const MODIFIER_EARNING_BONUS: Record<ModifierType, number> = {
@@ -81,6 +83,8 @@ export const MODIFIER_EARNING_BONUS: Record<ModifierType, number> = {
   [ModifierType.Blood]: 25.0,
   [ModifierType.Electric]: 50.0,
   [ModifierType.Radioactive]: 100.0,
+  [ModifierType.Cosmos]: 150.0,
+  [ModifierType.Admin]: 1000.0,
 };
 
 export const VISIBLE_MODIFIERS = [
@@ -90,6 +94,8 @@ export const VISIBLE_MODIFIERS = [
   ModifierType.Blood,
   ModifierType.Electric,
   ModifierType.Radioactive,
+  ModifierType.Cosmos,
+  ModifierType.Admin,
 ];
 
 export const MODIFIER_COLORS: Record<ModifierType, string> = {
@@ -100,6 +106,8 @@ export const MODIFIER_COLORS: Record<ModifierType, string> = {
   [ModifierType.Blood]: '#8b0000',
   [ModifierType.Electric]: '#00bfff',
   [ModifierType.Radioactive]: '#7fff00',
+  [ModifierType.Cosmos]: '#9966ff',
+  [ModifierType.Admin]: '#ff4444',
 };
 
 export const EARNINGS_GROWTH_RATE = 1.25;
