@@ -79,6 +79,71 @@
   font-size: 0.95rem;
 }
 
+.modifierSection {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+}
+
+.modifierTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.modifierDesc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  max-width: 640px;
+}
+
+.modifierGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+
+.modifierCard {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  transition: border-color 0.15s;
+}
+
+.modifierCard:hover {
+  border-color: var(--text-muted);
+}
+
+.modifierDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.modifierInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.modifierName {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.modifierMult {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 640px) {
   .pageTitle {
     font-size: 1.35rem;

@@ -3,6 +3,9 @@ import {
   ALL_CHARACTERS,
   RARITY_ORDER,
   RARITY_COLORS,
+  VISIBLE_MODIFIERS,
+  MODIFIER_EARNING_BONUS,
+  MODIFIER_COLORS,
   type Rarity,
 } from '../data/characters';
 import CharacterCard from './CharacterCard';
@@ -85,6 +88,33 @@ export default function Gallery() {
           filtered.map((c) => <CharacterCard key={c.id} character={c} />)
         )}
       </div>
+
+      <section className={styles.modifierSection}>
+        <h2 className={styles.modifierTitle}>Modifiers</h2>
+        <p className={styles.modifierDesc}>
+          When a character spawns, it has a chance to roll a modifier. Modifiers multiply
+          the character's base earning rate without affecting upgrade costs. Rarer modifiers
+          are exponentially harder to find.
+        </p>
+        <div className={styles.modifierGrid}>
+          {VISIBLE_MODIFIERS.map((mod) => (
+            <div key={mod} className={styles.modifierCard}>
+              <span
+                className={styles.modifierDot}
+                style={{ background: MODIFIER_COLORS[mod] }}
+              />
+              <div className={styles.modifierInfo}>
+                <span className={styles.modifierName} style={{ color: MODIFIER_COLORS[mod] }}>
+                  {mod}
+                </span>
+                <span className={styles.modifierMult}>
+                  {MODIFIER_EARNING_BONUS[mod]}x earnings
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
